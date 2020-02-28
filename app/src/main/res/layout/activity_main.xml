@@ -12,9 +12,9 @@
             android:layout_height="120dp"
             android:src="@drawable/qwr"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/text1"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="60dp"/>
 
         <TextView
             android:id="@+id/text1"
@@ -23,19 +23,19 @@
             android:text="Email"
             android:layout_marginStart="30dp"
             android:textSize="18sp"
+            android:layout_marginTop="128dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/image1"
-            app:layout_constraintBottom_toTopOf="@id/edit1"/>
+            app:layout_constraintTop_toBottomOf="@id/image1"/>
 
         <EditText
             android:id="@+id/edit1"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/text1"
-            app:layout_constraintBottom_toTopOf="@id/text2"/>
+            android:layout_marginTop="8dp"/>
 
         <TextView
             android:id="@+id/text2"
@@ -56,7 +56,7 @@
             android:layout_marginEnd="30dp"
             android:inputType="textPassword"
             app:layout_constraintTop_toBottomOf="@id/text2"
-            app:layout_constraintBottom_toTopOf="@id/text3"/>
+            android:layout_marginTop="8dp"/>
 
         <TextView
             android:id="@+id/text3"
@@ -68,7 +68,8 @@
             android:textSize="17sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/edit2"
-            app:layout_constraintBottom_toTopOf="@id/button1"/>
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp" />
 
         <Button
             android:id="@+id/button1"
@@ -83,23 +84,26 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/text3"
-            app:layout_constraintBottom_toTopOf="@id/text4"/>
+            android:layout_marginTop="16dp"/>
 
         <TextView
             android:id="@+id/text4"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
             android:text="New user?"
             android:textSize="16sp"
+            android:gravity="end"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/button1"
             app:layout_constraintEnd_toStartOf="@id/text5"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            a
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="16dp"/>
 
         <TextView
             android:id="@+id/text5"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="40dp"
             android:text="Sign Up"
@@ -109,6 +113,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/text4"
             app:layout_constraintTop_toBottomOf="@id/button1"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
