@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#ffb74d"
+        android:text="TRAIN"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="#fafafa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/text2" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_action_train"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guide1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/text1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=">"
+        android:textSize="32sp"
+        android:textColor="#fafafa"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/text1" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#f48fb1"
+        android:text="CAR"
+        android:textSize="24sp"
+        android:textColor="#fafafa"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text1"
+        app:layout_constraintBottom_toTopOf="@id/text3"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_action_car"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guide1"
+        app:layout_constraintTop_toBottomOf="@id/text1"
+        app:layout_constraintBottom_toBottomOf="@id/text2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=">"
+        android:textSize="32sp"
+        android:textColor="#fafafa"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text1"
+        app:layout_constraintBottom_toBottomOf="@id/text2" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#81d4fa"
+        android:text="AIRPLANE"
+        android:textColor="#fafafa"
+        android:textSize="24sp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text2"
+        app:layout_constraintBottom_toTopOf="@id/text4"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_action_airplane"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guide1"
+        app:layout_constraintTop_toBottomOf="@id/text2"
+        app:layout_constraintBottom_toBottomOf="@id/text3"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=">"
+        android:textSize="32sp"
+        android:textColor="#fafafa"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text2"
+        app:layout_constraintBottom_toBottomOf="@id/text3" />
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#b2ff59"
+        android:text="CYCLE"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="#fafafa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text3"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_action_motorcycle"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guide1"
+        app:layout_constraintTop_toBottomOf="@id/text3"
+        app:layout_constraintBottom_toBottomOf="@id/text4"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=">"
+        android:textSize="32sp"
+        android:textColor="#fafafa"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text3"
+        app:layout_constraintBottom_toBottomOf="@id/text4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.33"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.66"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
