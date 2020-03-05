@@ -6,10 +6,10 @@
 
     <ImageView
         android:id="@+id/image1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@drawable/qwer"
-        app:layout_constraintBottom_toBottomOf="@id/edit1"
+        app:layout_constraintBottom_toBottomOf="@id/guide"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,9 +25,7 @@
         android:layout_marginEnd="32dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/image1"
-        app:layout_constraintBottom_toTopOf="@id/edit2"
-        />
+        app:layout_constraintBottom_toBottomOf="@id/guide" />
 
     <EditText
         android:id="@+id/edit2"
@@ -58,4 +56,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginBottom="128dp"/>
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
